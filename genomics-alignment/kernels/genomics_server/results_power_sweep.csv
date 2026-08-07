@@ -1,0 +1,11 @@
+data_type,algo,kernel,pass_fail,avg_w,min_w,median_w,max_w,gcups,gcups_per_watt
+synthetic,genomics_server_bitap_k5,bitap,PASS,35.00,35,35,35,149.54,4.2726
+synthetic,genomics_server_interseq,sw,PASS,46.13,35,46,50,3.22,0.0698
+synthetic,genomics_server_scalar_swg,sw,PASS,45.67,36,47,51,17.86,0.3911
+synthetic,genomics_server_striped_swg,sw,PASS,50.56,40,51,56,28.02,0.5542
+synthetic,genomics_server_wfa,wfa,PASS,39.45,34,41,42,23.23,0.5888
+bam,genomics_server_bitap_k5,bitap,PASS,35.00,35,35.0,35,149.32,4.2663
+bam,genomics_server_interseq,sw,PASS,45.94,40,45.0,51,3.22,0.0701
+bam,genomics_server_scalar_swg,sw,PASS,46.85,35,46,51,17.86,0.3812
+bam,genomics_server_striped_swg,sw,PASS,55.80,46,57.0,58,27.49,0.4927
+bam,genomics_server_wfa,wfa,PASS,43.33,35,45.0,45,37.00,0.8539

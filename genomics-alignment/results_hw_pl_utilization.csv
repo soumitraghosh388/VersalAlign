@@ -1,0 +1,12 @@
+# VCK5000 PL Utilization — genomics_dma_swg
+# Append new experiments as additional rows with a new Experiment label
+# BRAM_18K = 2 x BRAM_tile
+Experiment,Config,Stage,Scope,BRAM_18K,BRAM_Tile,URAM,DSP,FF,LUT,LUT_Logic,LUT_Mem,BRAM_18K_Avail,URAM_Avail,DSP_Avail,FF_Avail,LUT_Avail,BRAM_util_pct,URAM_util_pct,DSP_util_pct,FF_util_pct,LUT_util_pct,Notes
+exp_1,ROWS=8 COLS=50 BUF_SIZE=2048 SCORE_BUF=128 NUM_ITERS=1 KERNEL=striped_swg,HLS_Estimate,dist_server,94,,0,0,5120,4410,,,1934,463,1968,1799680,899840,4.86,0.00,0.00,0.28,0.49,Source: dist_server_csynth.rpt; 30 BRAM_18K m_axi FIFO + 64 BRAM_18K buf[8][2048]
+exp_1,ROWS=8 COLS=50 BUF_SIZE=2048 SCORE_BUF=128 NUM_ITERS=1 KERNEL=striped_swg,HLS_Estimate,collect_server,80,,0,0,5460,7306,,,1934,463,1968,1799680,899840,4.14,0.00,0.00,0.30,0.81,Source: collect_server_csynth.rpt; 30 BRAM_18K m_axi FIFO + 50 BRAM_18K buf[50][128]
+exp_1,ROWS=8 COLS=50 BUF_SIZE=2048 SCORE_BUF=128 NUM_ITERS=1 KERNEL=striped_swg,Post_Synthesis,dist_server,,39.5,0,0,3290,2136,1949,187,967,463,1968,1799680,899840,4.08,0.00,0.00,0.18,0.24,Source: ulp_inst_0_dist_server_0_0_utilization_synth.rpt
+exp_1,ROWS=8 COLS=50 BUF_SIZE=2048 SCORE_BUF=128 NUM_ITERS=1 KERNEL=striped_swg,Post_Synthesis,collect_server,,58,0,0,7304,5021,4129,892,967,463,1968,1799680,899840,6.00,0.00,0.00,0.41,0.56,Source: ulp_inst_0_collect_server_0_0_utilization_synth.rpt
+exp_1,ROWS=8 COLS=50 BUF_SIZE=2048 SCORE_BUF=128 NUM_ITERS=1 KERNEL=striped_swg,Post_Implementation,Kernel_Only (user budget),,97,0,,10600,6687,,735,935,463,,,878298,10.37,0.00,,0.60,0.76,Source: impl_1_kernel_util_routed.rpt; BRAM user budget=935 tiles FF budget=1766853 LUT budget=878298
+exp_1,ROWS=8 COLS=50 BUF_SIZE=2048 SCORE_BUF=128 NUM_ITERS=1 KERNEL=striped_swg,Post_Implementation,Platform_Baseline,,32,0,,32827,21542,,3102,967,463,1968,1799680,899840,3.31,0.00,0.00,1.82,2.39,Source: impl_1_kernel_util_routed.rpt Platform row
+exp_1,ROWS=8 COLS=50 BUF_SIZE=2048 SCORE_BUF=128 NUM_ITERS=1 KERNEL=striped_swg,Post_Implementation,Full_Chip (platform+kernels),,129.5,0,0,43427,28225,24388,3837,967,463,1968,1799680,899840,13.39,0.00,0.00,2.41,3.14,Source: impl_1_full_util_routed.rpt; RAMB36=129 RAMB18=1
+exp_1,ROWS=8 COLS=50 BUF_SIZE=2048 SCORE_BUF=128 NUM_ITERS=1 KERNEL=striped_swg,Available,VCK5000_Total,,967,463,1968,1799680,899840,,,,,,,,,,,,,Chip-level totals from Vivado

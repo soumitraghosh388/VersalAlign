@@ -1,0 +1,38 @@
+# Build artifacts
+build.*/
+build/
+_x_temp/
+*.xo
+*.xsa
+*.xclbin
+*.exe
+*.o
+*.a
+*.so
+*.log
+*.jou
+.Xil/
+work/
+x86simulator_output/
+aiesimulator_output/
+run_stats/
+
+# Test data cache (downloaded genomes)
+test_data/.cache/
+
+# Large test datasets (keep tiny/small, exclude large)
+test_data/stress/
+test_data/illumina/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PL build reports
+_x/
+reports/
+
+# Editor/IDE
+*.swp
+*~
+.vscode/

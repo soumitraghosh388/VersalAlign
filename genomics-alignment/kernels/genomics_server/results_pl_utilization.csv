@@ -1,0 +1,4 @@
+algo,rows,cols,buf_size,lut_pct,ff_pct,bram_pct,uram_pct,dsp_pct
+genomics_server_wfa,8,50,2048,3.26,2.39,8.69,1.73,0.0
+genomics_server_wfa,4,25,2048,3.24,2.2,3.52,0.86,0.0
+genomics_server_wfa,1,1,2048,2.7,1.94,3.52,0.22,0.0
