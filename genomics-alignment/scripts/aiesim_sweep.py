@@ -43,7 +43,7 @@ ALGO_KERNEL_MAP = {
     "genomics_server_wfa":          ("wfa",         "wfa"),
 }
 
-DATA_TYPES  = ["synthetic"] #["synthetic", "illumina", "bam"]
+DATA_TYPES  = ["synthetic", "bam"] #["synthetic", "illumina", "bam"]
 NUM_PAIRS   = [16] #[4, 8, 16]
 READ_LENS   = [32] #[64, 128]
 
